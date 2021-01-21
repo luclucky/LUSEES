@@ -28,22 +28,14 @@ Further **PYTHON PACKAGES** required:
 - [pandas 1.1.4](https://pandas.pydata.org/)
 - [psycopg2 2.8.6](https://pypi.org/project/psycopg2/)
 - [random](https://docs.python.org/3/library/random.html)
-- re 2.2.1
 - [scikit-image 0.18.1](http://scikit-image.org/docs/dev/api/skimage.graph.html) 
 - [subprocess](https://docs.python.org/3/library/subprocess.html)
 
 ### B. INPUT-DATA
 
-The following three geo-datasets are required as **INPUT-DATA**:
+The following three geo-datasets are  as **INPUT-DATA**:
 
- - **stream_net.tif**:\
-   Raster dataset (resolution 25m x 25m) representing a 50 * 50 km section of a stream network from South-West Germany 
- - **habitat_patches.shp**:\
-   Point shapefile dataset representing centroids of potential habitat patches along the stream network with an interval of 100 meters.
- - **tiles_10x10km.shp**:\
-   Polygon shapefile dataset representing 25 squares covering the raster dataset. 
-
-The datasets are stored in the repository folder [geoDATA](https://github.com/luclucky/HabitatConnectivity_Colonization/tree/master/geoDATA_gitHUB) and initially have to been imported into a database-schema named **gd**; the schema has to be [created](https://www.postgresql.org/docs/9.3/sql-createschema.html) in advance. 
+Required geo-data is stored in the repository folder [geoDATA](https://github.com/luclucky/HabitatConnectivity_Colonization/tree/master/geoDATA_gitHUB) and initially have to been imported into a database-schema named **gd**; the schema has to be [created](https://www.postgresql.org/docs/9.3/sql-createschema.html) in advance. 
 For the import into the database see e.g. [PostGIS 2.4.8dev Manual](https://postgis.net/stuff/postgis-2.4.pdf) - 4.4.Loading GIS (Vector) Data & 5.1 Loading and Creating Rasters. 
 
 ### C. PYTHON CODE
