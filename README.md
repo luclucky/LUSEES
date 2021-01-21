@@ -15,9 +15,9 @@ Lucas Streib¹*, Noel Juvigny-Khenafou¹, Henriette Heer¹, Mira Kattwinkel¹, R
 All model results (see **C.**) are stored in a [PostgreSQL](https://www.postgresql.org/) database extended by [PostGIS](https://postgis.net/). 
 The model is implemented in [PYTHON](https://www.python.org/) using the PostgreSQL database adapter [Psycopg](http://initd.org/psycopg/docs/index.html) for PostGIS functions, data querying / storage.\
 
-1. [PostgreSQL 9.6.20](https://www.postgresql.org/docs/9.6/release-9-6-20.html)
-2. [PostGIS 2.3.3](https://postgis.net/2017/07/01/postgis-2.3.3/)
-3. [Python 3.9.0](https://www.python.org/downloads/release/python-390/)
+- [PostgreSQL 9.6.20](https://www.postgresql.org/docs/9.6/release-9-6-20.html)
+- [PostGIS 2.3.3](https://postgis.net/2017/07/01/postgis-2.3.3/)
+- [Python 3.9.0](https://www.python.org/downloads/release/python-390/)
 
 Further **PYTHON PACKAGES** required: 
 - [gdal 2.2.2](https://pypi.org/project/pygdal/)
@@ -43,12 +43,12 @@ For database access from Python, first the connection parameters have to be spec
 The individual code is commented regarding specific implementation details, variable declarations, data storage etc..
 Please run the scripts in the following order:
 
-1. **LUSEES_1_LandUseScenarios.py** 
-2. **LUSEES_2_PatchArragmentScenarios.py** 
-3. **LUSEES_3_MetaPopulationConnections.py** 
-4. **LUSEES_4_MetaPopulationPatches_P1.py** 
-4. **LUSEES_4_MetaPopulationPatches_P2.py** 
-5. **LUSEES_1_LandUseScenarios.py** 
+- **LUSEES_1_LandUseScenarios.py** 
+- **LUSEES_2_PatchArragmentScenarios.py** 
+- **LUSEES_3_MetaPopulationConnections.py** 
+- **LUSEES_4_MetaPopulationPatches_P1.py** 
+- **LUSEES_4_MetaPopulationPatches_P2.py** 
+- **LUSEES_1_LandUseScenarios.py** 
 
 -----
 
