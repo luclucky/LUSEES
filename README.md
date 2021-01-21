@@ -6,13 +6,11 @@
 Lucas Streib¹*, Noel Juvigny-Khenafou¹, Henriette Heer¹, Mira Kattwinkel¹, Ralf B. Schäfer¹
 
 ¹ iES - Institute for Environmental Sciences, University of Koblenz-Landau, 76829 Landau i. d. Pfalz, Germany\
-* Corresponding author
+\* Corresponding author
 
 -----
 
 ### A. SOFTWARE-FRAMEWORK
-
-**SOFTWARE-FRAMEWORK** for the presented model: 
 
 All model results (see **C.**) are stored in a [PostgreSQL](https://www.postgresql.org/) database extended by [PostGIS](https://postgis.net/). 
 The model is implemented in [PYTHON](https://www.python.org/) using the PostgreSQL database adapter [Psycopg](http://initd.org/psycopg/docs/index.html) for PostGIS functions, data querying / storage.\
