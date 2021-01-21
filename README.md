@@ -33,7 +33,7 @@ Further **PYTHON PACKAGES** required:
 
 ### B. INPUT-DATA
 
-Required geo-data is stored in the repository subfolder [GeoData](https://github.com/luclucky/LUSEES/tree/main/GeoData) as [SQL dump](https://www.postgresql.org/docs/9.6/backup.html). To run the model the dump-file **gd** has to be [restored](https://www.postgresql.org/docs/9.6/backup-dump.html#BACKUP-DUMP-RESTORE) in a PostgreSQL database extended by PostGIS; it is required to enable the GDAL drivers in the PostGIS environment previously by following SQL query:
+Required geo-data is stored in the repository subfolder [GeoData](https://github.com/luclucky/LUSEES/tree/main/GeoData) as [SQL dump](https://www.postgresql.org/docs/9.6/backup.html). To run the model the dump-file **gd** has to be [restored](https://www.postgresql.org/docs/9.6/backup-dump.html#BACKUP-DUMP-RESTORE) in a PostgreSQL database extended by PostGIS. Hereto, it is required to enable the GDAL drivers in the PostGIS environment first by following SQL query:
 
 'SET postgis.gdal_enabled_drivers = 'ENABLE_ALL';'
 
