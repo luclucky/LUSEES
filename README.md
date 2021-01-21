@@ -33,22 +33,21 @@ Further **PYTHON PACKAGES** required:
 
 ### B. INPUT-DATA
 
-The following three geo-datasets are  as **INPUT-DATA**:
+Required geo-data is stored in the repository subfolder [GeoData](https://github.com/luclucky/LUSEES/tree/main/GeoData) as [SQL dump](https://www.postgresql.org/docs/9.6/backup.html). To run the model the dump-file **gd** has to be [restored](https://www.postgresql.org/docs/9.6/backup-dump.html#BACKUP-DUMP-RESTORE) in a PostgreSQL database extended by PostGIS; it is required to enable the GDAL drivers in the PostGIS environment previously by following SQL query:
 
-Required geo-data is stored in the repository folder [geoDATA](https://github.com/luclucky/HabitatConnectivity_Colonization/tree/master/geoDATA_gitHUB) and initially have to been imported into a database-schema named **gd**; the schema has to be [created](https://www.postgresql.org/docs/9.3/sql-createschema.html) in advance. 
-For the import into the database see e.g. [PostGIS 2.4.8dev Manual](https://postgis.net/stuff/postgis-2.4.pdf) - 4.4.Loading GIS (Vector) Data & 5.1 Loading and Creating Rasters. 
+'SET postgis.gdal_enabled_drivers = 'ENABLE_ALL';'
 
-### C. PYTHON CODE
+### C. CODE
 
 For database access from Python, first the connection parameters have to be specified in each script stored in the repository folder [pythonCODE](https://github.com/luclucky/HabitatConnectivity_Colonization/tree/master/pythonCODE). Therefore, replace **???** in the command **psycopg2.connect("host=??? port=??? dbname=??? user=??? password=???")** found in each script according to the [psycopg manual](http://initd.org/psycopg/docs/module.html).
 The individual code is commented regarding specific implementation details, variable declarations, data storage etc..
 Please run the scripts in the following order:
 
-**1. Landscape_Scenarios.py**\
-**2. EuclideanDistance_Networks.py**\
-**3. Patch_Arragments.py**\
-**4. Habitat_Networks.py**\
-**5. Simulation.py**
+1. **LUSEES_1_LandUseScenarios.py**\
+2. **EuclideanDistance_Networks.py**\
+3. **Patch_Arragments.py**\
+4. **Habitat_Networks.py**\
+5. **Simulation.py**
 
 ### D. R CODE
 
