@@ -49,8 +49,6 @@ Please run the scripts in the following order:
 4. **Habitat_Networks.py**\
 5. **Simulation.py**
 
-### D. R CODE
-
 -----
 
 For suggestions or requests for further information please contact the corresponding author **Lucas Streib**:
