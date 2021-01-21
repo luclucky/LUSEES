@@ -43,11 +43,12 @@ For database access from Python, first the connection parameters have to be spec
 The individual code is commented regarding specific implementation details, variable declarations, data storage etc..
 Please run the scripts in the following order:
 
-1. **LUSEES_1_LandUseScenarios.py**\
-2. **EuclideanDistance_Networks.py**\
-3. **Patch_Arragments.py**\
-4. **Habitat_Networks.py**\
-5. **Simulation.py**
+1. **LUSEES_1_LandUseScenarios.py**
+2. **LUSEES_2_PatchArragmentScenarios.py**
+3. **LUSEES_3_MetaPopulationConnections.py**
+4-1. **LUSEES_4_MetaPopulationPatches_P1.py**
+4-2. **LUSEES_4_MetaPopulationPatches_P2.py**
+5. **LUSEES_1_LandUseScenarios.py**
 
 -----
 
