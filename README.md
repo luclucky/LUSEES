@@ -60,7 +60,7 @@ To run the Model execute the files in following order:
 - LUSEES_4_MetaPopulationPatches_P2.py
 - LUSEES_1_LandUseScenarios.py
 
-In all files it is required to specify DataBase connection parameters; i.e. replace **???** in following snippet:
+In all files it is required to specify DataBase connection parameters; i.e. to replace **???** in following snippet:
 
 'psycopg2.connect("host=??? port=??? dbname=??? user=??? password=???")' 
 
@@ -71,7 +71,7 @@ Analysis are performed in **R** by executing the (commented) files stored in the
 - ANALYSIS_1_ExportDB.R
 - ANALYSIS_2_ComputationEEA.R
 
-In the 'ANALYSIS_1_ExportDB.R'-file it is required to specify DataBase connection parameters; i.e. replace **???** in following snippet:
+In the 'ANALYSIS_1_ExportDB.R'-file it is required to specify DataBase connection parameters; i.e. to replace **???** in following snippet:
 
 'con = dbConnect(drv, dbname = "???", host = "???", port = ???, user = "???", password = "???")'
 
