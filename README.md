@@ -46,38 +46,32 @@ To apply the model, the dump-file **gd** has to be [restored](https://www.postgr
 
 ### C. CODE
 
-All following Code is commented regarding specific implementation details, paramter declarations, data storage...
-
 #### Python
 
+Software implementation of the presented meta-population model in Python is stored as (commented) files in [CodePython](https://github.com/luclucky/LUSEES/tree/main/CodePython).
+To run the Model, execute the files in following order:
 
-stored in [CodePython](https://github.com/luclucky/LUSEES/tree/main/CodePython)
+- *LUSEES_1_LandUseScenarios.py* 
+- *LUSEES_2_PatchArragmentScenarios.py*
+- *LUSEES_3_MetaPopulationConnections.py*
+- *LUSEES_4_MetaPopulationPatches_P1.py*
+- *LUSEES_4_MetaPopulationPatches_P2.py*
+- *LUSEES_1_LandUseScenarios.py*
 
-Run the Scripts in following order:
-
-- **LUSEES_1_LandUseScenarios.py** 
-- **LUSEES_2_PatchArragmentScenarios.py** 
-- **LUSEES_3_MetaPopulationConnections.py** 
-- **LUSEES_4_MetaPopulationPatches_P1.py** 
-- **LUSEES_4_MetaPopulationPatches_P2.py** 
-- **LUSEES_1_LandUseScenarios.py** 
-
-For DataBase access onnection parameters have to be specified in each '.py'-File; i.e. replace **???** in:
+In all files it is required to specify DataBase connection parameters; i.e. replace **???** in following snippet:
 
 'psycopg2.connect("host=??? port=??? dbname=??? user=??? password=???")' 
 
-, as specified by [psycopg](http://initd.org/psycopg/docs/module.html).
-
 #### R
 
+Analysis are performed in **R** by executing the (commented) files stored in [CodeR](https://github.com/luclucky/LUSEES/tree/main/CodeR) in following order:
 
-stored in [CodeR](https://github.com/luclucky/LUSEES/tree/main/CodeR)
+- *ANALYSIS_1_ExportDB.R*
+- *ANALYSIS_2_ComputationEEA.R *
 
-For DataBase access onnection parameters have to be specified in each '.Rda'-File; i.e. replace **???** in:
+In the 'ANALYSIS_1_ExportDB.R'-file it is required to specify DataBase connection parameters; i.e. replace **???** in following snippet:
 
 'con = dbConnect(drv, dbname = "???", host = "???", port = ???, user = "???", password = "???")'
-
-, as specified by [RPostgreSQL](https://cran.r-project.org/web/packages/RPostgreSQL/RPostgreSQL.pdf).
 
 ### D. GAPHS
 
