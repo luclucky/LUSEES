@@ -12,8 +12,9 @@ Lucas Streib¹*, Noel Juvigny-Khenafou¹, Henriette Heer¹, Mira Kattwinkel¹, R
 
 ### A. SOFTWARE-FRAMEWORK
 
-All model results (see **C.**) are stored in a [PostgreSQL](https://www.postgresql.org/) database extended by [PostGIS](https://postgis.net/). 
-The model is implemented in [PYTHON](https://www.python.org/) using the PostgreSQL database adapter [Psycopg](http://initd.org/psycopg/docs/index.html) for PostGIS functions, data querying / storage. Analyses were performed in [R](https://www.r-project.org/).
+All model results (see **C.**) are stored in a [PostgreSQL](https://www.postgresql.org/) database extended by [PostGIS](https://postgis.net/).\ 
+The model is implemented in [PYTHON](https://www.python.org/) using the PostgreSQL database adapter [Psycopg](http://initd.org/psycopg/docs/index.html) for PostGIS functions, data querying / storage.\
+Analyses were performed in [R](https://www.r-project.org/).
 
 - [PostgreSQL 9.6.20](https://www.postgresql.org/docs/9.6/release-9-6-20.html)
 - [PostGIS 2.3.3](https://postgis.net/2017/07/01/postgis-2.3.3/)
@@ -40,7 +41,8 @@ Use of other package versions may result in unpredictability!
 ### B. INPUT-DATA
 
 Required geo-data is stored in [GeoData](https://github.com/luclucky/LUSEES/tree/main/GeoData) as [SQL dump](https://www.postgresql.org/docs/9.6/backup.html). 
-To apply the model, the dump-file **gd** has to be [restored](https://www.postgresql.org/docs/9.6/app-pgrestore.html) in a PostgreSQL database extended by PostGIS first. Hereto, it is required to enable the [GDAL drivers](https://postgis.net/docs/postgis_gdal_enabled_drivers.html) in the PostGIS environment by following SQL query:
+To apply the model, the dump-file **gd** has to be [restored](https://www.postgresql.org/docs/9.6/app-pgrestore.html) in a PostgreSQL database extended by PostGIS first.\
+Hereto, it is required to enable the [GDAL drivers](https://postgis.net/docs/postgis_gdal_enabled_drivers.html) in the PostGIS environment by following SQL query:
 
 'SET postgis.gdal_enabled_drivers = 'ENABLE_ALL';'
 
@@ -48,7 +50,7 @@ To apply the model, the dump-file **gd** has to be [restored](https://www.postgr
 
 #### Python
 
-Software implementation of the presented meta-population model in Python is stored as (commented) files in [CodePython](https://github.com/luclucky/LUSEES/tree/main/CodePython).
+Software implementation of the presented meta-population model in Python is stored as (commented) files in [CodePython](https://github.com/luclucky/LUSEES/tree/main/CodePython).\
 To run the Model, execute the files in following order:
 
 - *LUSEES_1_LandUseScenarios.py* 
@@ -75,11 +77,13 @@ In the 'ANALYSIS_1_ExportDB.R'-file it is required to specify DataBase connectio
 
 ### D. GAPHS
 
-**Figure ???:** 
+#### LUS
 
-Effects of land use related stress (LUS) resulting from land use scenarios of 25 % LT 1, 25 % LT 2, & 50 % LT 3 combined with extreme event related stress (EES), i.e. all levels, on meta-population population size (y-Axis) from time-step 5 to time-step 110 (x-Axis).
+Graphs representing the specific effects of every applied land use related stress (LUS) level combined with all extreme event related stress (EES) levels on meta-population network size (y-Axis) from time-step 5 to time-step 110 (x-Axis) are stored in [LUSEES_Course/LUS](https://github.com/luclucky/LUSEES/tree/main/Graphs/LUSEES_Course/LUS).
 
-Individual effects of land use related stress only (LUS - *A.*; i.e. no EES) and extreme event related stress only (EES - *B.*; i.e. determined at the optimal LUS level) on meta-population population size (y-Axis) from time-step 5 to time-step 110 (x-Axis). Colored lines represent the mean of 300 simulations (i.e. not differentiate by land use configuration). The vertical dotted line at time-step 10 represents the start of local patch extinction and extreme events simulation. The (3 x 100) dashes on the right outside the figure represent the final meta-population population size (i.e at time steps 110) of all simulations split according to the neutral landscape model (NLM) algorithm used to set-up the land use scenarios: dark-yellow dashes represent 'random', red-orange dashes represent 'random element nearest-neighbour', and dark-violet dashes represent 'random cluster nearest-neighbour'. ***A.***: LUS levels are labeled at the specific line-end, where the first three digits stand for LT 1, the following three for LT 2, and the last three for LT 3. ***B.***: EES levels are labeled at the end of the line, where the first number represents intensity, and the second frequency.
+#### EES
+
+Graphs representing the specific effects of every applied extreme event related stress (EES) combined with all land use related stress (LUS) level  levels on meta-population network size (y-Axis) from time-step 5 to time-step 110 (x-Axis) are stored in [LUSEES_Course/EES](https://github.com/luclucky/LUSEES/tree/main/Graphs/LUSEES_Course/EES).
 
 -----
 
