@@ -53,12 +53,12 @@ Hereto, it is required to enable the [GDAL drivers](https://postgis.net/docs/pos
 Software implementation of the presented meta-population model in Python is stored as (commented) files in [CodePython](https://github.com/luclucky/LUSEES/tree/main/CodePython).\
 To run the Model, execute the files in following order:
 
-- *LUSEES_1_LandUseScenarios.py* 
-- *LUSEES_2_PatchArragmentScenarios.py*
-- *LUSEES_3_MetaPopulationConnections.py*
-- *LUSEES_4_MetaPopulationPatches_P1.py*
-- *LUSEES_4_MetaPopulationPatches_P2.py*
-- *LUSEES_1_LandUseScenarios.py*
+- LUSEES_1_LandUseScenarios.py 
+- LUSEES_2_PatchArragmentScenarios.py
+- LUSEES_3_MetaPopulationConnections.py
+- LUSEES_4_MetaPopulationPatches_P1.py
+- LUSEES_4_MetaPopulationPatches_P2.py
+- LUSEES_1_LandUseScenarios.py
 
 In all files it is required to specify DataBase connection parameters; i.e. replace **???** in following snippet:
 
@@ -68,8 +68,8 @@ In all files it is required to specify DataBase connection parameters; i.e. repl
 
 Analysis are performed in **R** by executing the (commented) files stored in [CodeR](https://github.com/luclucky/LUSEES/tree/main/CodeR) in following order:
 
-- *ANALYSIS_1_ExportDB.R*
-- *ANALYSIS_2_ComputationEEA.R *
+- ANALYSIS_1_ExportDB.R
+- ANALYSIS_2_ComputationEEA.R
 
 In the 'ANALYSIS_1_ExportDB.R'-file it is required to specify DataBase connection parameters; i.e. replace **???** in following snippet:
 
@@ -79,11 +79,11 @@ In the 'ANALYSIS_1_ExportDB.R'-file it is required to specify DataBase connectio
 
 #### LUS
 
-Graphs representing the specific effects of every applied land use related stress (LUS) level combined with all extreme event related stress (EES) levels on meta-population network size (y-Axis) from time-step 5 to time-step 110 (x-Axis) are stored in [LUSEES_Course/LUS](https://github.com/luclucky/LUSEES/tree/main/Graphs/LUSEES_Course/LUS).
+Graphs representing the effect of every specific land use related stress (LUS) level combined with all extreme event related stress (EES) levels on meta-population network size (y-Axis) from time-step 5 to time-step 110 (x-Axis) are stored in [LUSEES_Course/LUS](https://github.com/luclucky/LUSEES/tree/main/Graphs/LUSEES_Course/LUS).
 
 #### EES
 
-Graphs representing the specific effects of every applied extreme event related stress (EES) combined with all land use related stress (LUS) level  levels on meta-population network size (y-Axis) from time-step 5 to time-step 110 (x-Axis) are stored in [LUSEES_Course/EES](https://github.com/luclucky/LUSEES/tree/main/Graphs/LUSEES_Course/EES).
+Graphs representing the effect of every specific extreme event related stress (EES) level combined with all land use related stress (LUS) levels on meta-population network size (y-Axis) from time-step 5 to time-step 110 (x-Axis) are stored in [LUSEES_Course/EES](https://github.com/luclucky/LUSEES/tree/main/Graphs/LUSEES_Course/EES).
 
 -----
 
