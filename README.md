@@ -40,7 +40,7 @@ Use of other package versions may result in unpredictability!
 
 ### B. INPUT-DATA
 
-Required geo-data is stored in [GeoData](https://github.com/luclucky/LUSEES/tree/main/GeoData) as [SQL dump](https://www.postgresql.org/docs/9.6/backup.html). 
+Required geo-data is stored in the sub-folder [GeoData](https://github.com/luclucky/LUSEES/tree/main/GeoData) as [SQL dump](https://www.postgresql.org/docs/9.6/backup.html). 
 To apply the model, the dump-file **gd** has to be [restored](https://www.postgresql.org/docs/9.6/app-pgrestore.html) in a PostgreSQL database extended by PostGIS first.\
 Hereto, it is required to enable the [GDAL drivers](https://postgis.net/docs/postgis_gdal_enabled_drivers.html) in the PostGIS environment by following SQL query:
 
@@ -50,8 +50,8 @@ Hereto, it is required to enable the [GDAL drivers](https://postgis.net/docs/pos
 
 #### Python
 
-Software implementation of the presented meta-population model in Python is stored as (commented) files in [CodePython](https://github.com/luclucky/LUSEES/tree/main/CodePython).\
-To run the Model, execute the files in following order:
+Software implementation of the presented meta-population model in Python is stored as (commented) files in the sub-folder [CodePython](https://github.com/luclucky/LUSEES/tree/main/CodePython).\
+To run the Model execute the files in following order:
 
 - LUSEES_1_LandUseScenarios.py 
 - LUSEES_2_PatchArragmentScenarios.py
@@ -66,7 +66,7 @@ In all files it is required to specify DataBase connection parameters; i.e. repl
 
 #### R
 
-Analysis are performed in **R** by executing the (commented) files stored in [CodeR](https://github.com/luclucky/LUSEES/tree/main/CodeR) in following order:
+Analysis are performed in **R** by executing the (commented) files stored in the sub-folder [CodeR](https://github.com/luclucky/LUSEES/tree/main/CodeR) in following order:
 
 - ANALYSIS_1_ExportDB.R
 - ANALYSIS_2_ComputationEEA.R
@@ -79,11 +79,11 @@ In the 'ANALYSIS_1_ExportDB.R'-file it is required to specify DataBase connectio
 
 #### LUS
 
-Graphs representing the effect of every specific land use related stress (LUS) level combined with all extreme event related stress (EES) levels on meta-population network size (y-Axis) from time-step 5 to time-step 110 (x-Axis) are stored in [LUSEES_Course/LUS](https://github.com/luclucky/LUSEES/tree/main/Graphs/LUSEES_Course/LUS).
+Graphs representing the effect of every specific land use related stress (LUS) level combined with all extreme event related stress (EES) levels on meta-population network size (y-Axis) from time-step 5 to time-step 110 (x-Axis) are stored in the sub-folder [LUSEES_Course/LUS](https://github.com/luclucky/LUSEES/tree/main/Graphs/LUSEES_Course/LUS).
 
 #### EES
 
-Graphs representing the effect of every specific extreme event related stress (EES) level combined with all land use related stress (LUS) levels on meta-population network size (y-Axis) from time-step 5 to time-step 110 (x-Axis) are stored in [LUSEES_Course/EES](https://github.com/luclucky/LUSEES/tree/main/Graphs/LUSEES_Course/EES).
+Graphs representing the effect of every specific extreme event related stress (EES) level combined with all land use related stress (LUS) levels on meta-population network size (y-Axis) from time-step 5 to time-step 110 (x-Axis) are stored in the sub-folder [LUSEES_Course/EES](https://github.com/luclucky/LUSEES/tree/main/Graphs/LUSEES_Course/EES).
 
 -----
 
