@@ -40,7 +40,7 @@ To run the model the dump-file **gd** has to be [restored](https://www.postgresq
 
 ### C. CODE
 
-For database access from Python, first the connection parameters have to be specified in each script stored in the repository folder [pythonCODE](https://github.com/luclucky/HabitatConnectivity_Colonization/tree/master/pythonCODE). Therefore, replace **???** in the command **psycopg2.connect("host=??? port=??? dbname=??? user=??? password=???")** found in each script according to the [psycopg manual](http://initd.org/psycopg/docs/module.html).
+For database access from Python, first the connection parameters have to be specified in each script stored in the repository folder [CodePython](https://github.com/luclucky/HabitatConnectivity_Colonization/tree/master/pythonCODE). Therefore, replace **???** in the command **psycopg2.connect("host=??? port=??? dbname=??? user=??? password=???")** found in each script according to the [psycopg manual](http://initd.org/psycopg/docs/module.html).
 The individual code is commented regarding specific implementation details, paramter declarations, data storage etc..
 
 To reproduce the please run the scripts in the following order:
