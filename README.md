@@ -51,7 +51,7 @@ Hereto, it is required to enable the [GDAL drivers](https://postgis.net/docs/pos
 #### Python
 
 Software implementation of the presented meta-population model in Python is stored as (commented) files in the sub-folder [CodePython](https://github.com/luclucky/LUSEES/tree/main/CodePython).\
-To run the Model execute the files in following order:
+To run the Model execute the files in the following order:
 
 - LUSEES_1_LandUseScenarios.py 
 - LUSEES_2_PatchArragmentScenarios.py
@@ -60,18 +60,18 @@ To run the Model execute the files in following order:
 - LUSEES_4_MetaPopulationPatches_P2.py
 - LUSEES_1_LandUseScenarios.py
 
-In all files it is required to specify DataBase connection parameters; i.e. to replace **???** in following snippet:
+In all files it is required to specify DataBase connection parameters; i.e. to replace **???** in the following snippet:
 
 'psycopg2.connect("host=??? port=??? dbname=??? user=??? password=???")' 
 
 #### R
 
-Analysis are performed in **R** by executing the (commented) files stored in the sub-folder [CodeR](https://github.com/luclucky/LUSEES/tree/main/CodeR) in following order:
+Analyses are performed in **R** by executing the (commented) files stored in the sub-folder [CodeR](https://github.com/luclucky/LUSEES/tree/main/CodeR) in the following order:
 
 - ANALYSIS_1_ExportDB.R
 - ANALYSIS_2_ComputationEEA.R
 
-In the 'ANALYSIS_1_ExportDB.R'-file it is required to specify DataBase connection parameters; i.e. to replace **???** in following snippet:
+In the 'ANALYSIS_1_ExportDB.R'-file it is required to specify DataBase connection parameters; i.e. to replace **???** in the following snippet:
 
 'con = dbConnect(drv, dbname = "???", host = "???", port = ???, user = "???", password = "???")'
 
@@ -91,7 +91,7 @@ For suggestions or requests for further information please contact the correspon
 
 &#9993; streib@uni-landau.de\
 &#9990; +49 6341 280-32317\
-iES - Institute for Enviornmental Sciences\
+iES - Institute for Environmental Sciences\
 Quantitative Landscape Ecology\
 University of Koblenz-Landau, Campus Landau\
 Fortstraße 7\
