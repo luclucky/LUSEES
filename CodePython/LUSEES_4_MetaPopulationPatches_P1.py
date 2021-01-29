@@ -171,3 +171,6 @@ for x in range(len(DF_pts_TC)): # Loop over all PAS Points
 cursor.execute("""CREATE TABLE ca.pas_pts_ca_niq AS SELECT DISTINCT * FROM ca.pas_pts_ca;""")
 
 conn.commit()
+
+cursor.close()
+conn.close()
