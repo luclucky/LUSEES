@@ -266,7 +266,7 @@ for x in range(len(LTpro)):
 
         ## DB-Import
 
-        os.environ['PGPASSWORD'] = '1gis!gis1'
+        os.environ['PGPASSWORD'] = '???'
 
         cmds = 'raster2pgsql -s 25832 -I -C -M "' + dst_filename + '" -F ' + str(outSs[x]) + '.nlmre' + str(xx) + ' | psql -d DB_PhD -h 139.14.20.252 -U streib_lucas '
         subprocess.call(cmds, shell=True)
